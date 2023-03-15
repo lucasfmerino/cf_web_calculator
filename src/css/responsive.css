@@ -1,0 +1,70 @@
+@media (max-width: 1200px) {
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 10px
+    }
+
+    .form-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        border-radius: 15px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .header-title {
+        font-size: 20px;
+    }
+
+    .nav-title {
+        font-size: 20px;
+    }
+
+    .menu li a {
+        font-size: 10px;
+    }
+    
+    .calculator {
+        font-size: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .calculator-result {
+        font-size: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .data-input {
+        padding-right: 20px;
+    }
+
+    .input{
+        width: 50px;
+    }
+
+}
+
