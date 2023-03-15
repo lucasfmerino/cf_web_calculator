@@ -6,6 +6,8 @@
 Esta aplicação é uma calculadora de força de corte para geometria de furos. A aplicação apresenta uma interface simples, onde o usuário pode selecionar o tipo de geometria, fornecer os dados necessários e obter o resultado do cálculo.
 <br>
 
+<a href="https://lucasfmerino.github.io/cf_web_calculator/index.html">https://lucasfmerino.github.io/cf_web_calculator/index.html</a>
+<br>
 
 ## Tecnologias Utilizadas
 
