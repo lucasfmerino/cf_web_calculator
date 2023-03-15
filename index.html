@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <title>Força de Corte</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header-title">CÁLCULO DA FORÇA DE CORTE</h1>
+        <nav class="nav-container">
+            <div>
+                <h2 class="nav-title">Selecione a geometria do furo</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="./index.html" id="selected">Redondo</a></li>
+                <li><a href="./square.html">Quadrado</a></li>
+                <li><a href="./rectangular.html">Retangular</a></li>
+                <li><a href="./oblong.html">Oblongo</a></li>
+                <li><a href="./hexagonal.html">Hexagonal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="data-content">
+            <div class="data-input">
+                <form>
+
+                    <div class="form-content">
+                        <p>Diâmetro do furo:</p>
+                        <input type="number" name="furo" class="input" id="hole" required>
+                        <p>mm</p>
+                    </div><br>
+
+                    <div class="form-content">
+                        <p>Espessura da chapa:</p>
+                        <input type="number" name="espessura" class="input" id="thickness" required>
+                        <p>mm</p>
+                    </div><br>
+
+                    <div class="form-content">
+                        <p>Tensão de Cisalhameto:</p>
+                        <input type="number" name="cisalhamento" class="input" id="shear" required>
+                        <p>kgf/mm2</p>
+                    </div><br>
+
+                    <div class="form-content">
+                        <p>Quantidade de punções:</p>
+                        <input type="number" name="quantidade" class="input" id="amount" required>
+                        <p>unidades</p>
+                    </div><br>
+                </form>
+
+            </div>
+            <div class="data-t">
+                <div id="t-title">
+                    <h3>Tensão de cisalhamento (sugestão):</h3>
+                </div>
+                <p id="t1">Aço SAE 1010 .......32 kgf/mm2</p>
+                <p id="t2">Aço Inox ................56 kgf/mm2</p>
+                <p id="t1">Cobre .....................30 kgf/mm2</p>
+                <p id="t2">Alumínio ................16 kgf/mm2</p>
+            </div>
+        </div>
+        <div class="calculator">
+            <button id="calculate">CALCULAR</button>
+            <div class="calculator-result" id="result">FORÇA DE CORTE</div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
