@@ -33,7 +33,7 @@ function calculate(){
     console.log(shear);
     var amount = amountInput.value;
     console.log(amount);
-    var result = (((length - width) * 2) + (width * 3.141593)) * thickness  * shear * amount;
+    var result = (((length - width) * 2) + (width * 3.141593)) * thickness * shear * amount;
     cuttingForce.innerText = `Força de corte = ${result.toFixed(2)} kgf`;
     console.log( `Força de corte = ${result.toFixed(2)} kgf`);
 }
